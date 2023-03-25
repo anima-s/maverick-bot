@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - contact
+  - rooms
+  - amenities
+  - promotions
+  - price
+  - transportation
+  - food
+  - inquiry
+  - book
+  - payment
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_food:
+    - text: "Guests can indulge in a diverse range of cuisines at the hotel's restaurant"
+
+  utter_promotions:
+    - text: "Special deals and promotions"
+
+  utter_contact:
+    - text: "123 Main Street, New York, NY 10001"
+
+  utter_rooms_count:
+    - text: "250"
+
+  utter_booking:
+    - text: "Ok, booking hotel room for you"
+
+  utter_price:
+    - text: "$300 per night"
+
+  utter_hotel_mission:
+      - text: "making guests' stays as comfortable and enjoyable as possible"
+
+  utter_valet:
+    - text: "Valet parking services"
+
+  utter_inquiry:
+      - text: "Sure, I can help you with that"
+
+  utter_housekeeping:
+    - text: "Housekeeping"
+
+  utter_payment_modes:
+    - text: "Payment can be made using all major credit cards, with secure online payment options available for convenience"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

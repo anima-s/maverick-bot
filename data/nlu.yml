@@ -1,0 +1,145 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: amenities
+  examples: |
+    - What hotel offers its guests a variety of luxurious accommodations to fit their needs?
+    - What type of facilities does Hotel One offer?
+    - How many meeting rooms does Hotel One have?
+    - What type of services are available for guests who prefer to dine in the comfort of their own rooms?
+    - What type of parking services are available for guests with vehicles?
+    - What does Hotel One offer to suit every guest's needs and budget?
+    - What does Hotel One offer throughout the year?
+    - What kind of staff is always available to assist with any requests or recommendations for local attractions?
+    - What measures have been implemented throughout the hotel?
+
+- intent: food
+  examples: |
+    - What is the name of the restaurant in the hotel?
+
+- intent: book
+  examples: |
+    - Ok, book standard room for me.
+
+- intent: rooms
+  examples: |
+    - How many rooms are available at Hotel One?
+    - What is Hotel One's team committed to?
+    - What type of service ensures that guests' rooms are always clean and well-stocked with amenities?
+    - What is Hotel One committed to?
+    - Where is Hotel One located?
+
+- intent: transportation
+  examples: |
+    - How many subway stations are located within walking distance of Hotel One?
+
+- intent: price
+  examples: |
+    - What is the price of standard rooms at Hotel One?
+    - What is the starting price for the Standard Room?
+
+- intent: payment
+  examples: |
+    - What type of payment can be made using all major credit cards?
+
+- intent: promotions
+  examples: |
+    - What types of deals are regularly offered to make guests' stays even more affordable?
+
+- intent: contact
+  examples: |
+    - Where is Hotel One located?
+
+
+- intent: inquiry
+  examples: |
+    - I want to book a hotel room?

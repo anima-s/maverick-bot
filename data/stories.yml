@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+# hotel stories
+- story: Standard booking
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: inquiry
+    - action: utter_inquiry
+    - intent: price
+    - action: utter_price
+    - intent: book
+    - action: utter_booking
+    - intent: deny
+    - action: utter_goodbye
+
+
+- story: User books hotel
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: inquiry
+    - action: utter_inquiry
+    - intent: price
+    - action: utter_price
+    - intent: rooms
+    - action: utter_rooms_count
+    - intent: contact
+    - action: utter_contact
+    - intent: payment
+    - action: utter_payment_modes
+    - intent: book
+    - action: utter_booking
+    - intent: deny
+    - action: utter_goodbye
